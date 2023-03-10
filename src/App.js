@@ -15,7 +15,7 @@ function App() {
         </main>
         <PaginationRounded data={data}/>
 
-      <AddTaskModal active={modalActive} setActive={setModalActive}/>
+      <AddTaskModal active={modalActive} setActive={setModalActive} data={data}/>
     </div>
   );
 }
