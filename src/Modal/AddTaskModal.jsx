@@ -7,7 +7,7 @@ const AddTaskModal = (props) => {
     const [title, setTitle, description, setDescription] = useState();
 
     function addTask() {
-        let dateTime = new Date().toJSON().slice(0, 10).split`-`.join``;
+        let dateTime = (new Date().toLocaleDateString()) + ' в ' + new Date().toLocaleTimeString();
         props.data.push({
             "taskId": (props.data.length + 1).toString(),
             "title": title,
